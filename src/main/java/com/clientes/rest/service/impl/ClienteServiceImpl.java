@@ -1,5 +1,7 @@
 package com.clientes.rest.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -43,6 +45,11 @@ public class ClienteServiceImpl implements IClienteService{
     @Override
     public boolean existById(Integer id) {
         return clienteDao.existsById(id);
+    }
+
+    @Override
+    public List<Cliente> listAll() {
+        return (List<Cliente>) clienteDao.findAll();
     }
     
 }

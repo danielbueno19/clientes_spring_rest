@@ -18,6 +18,8 @@ import com.clientes.rest.model.entity.Cliente;
 import com.clientes.rest.model.payload.MensajeResponse;
 import com.clientes.rest.service.IClienteService;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("api/v1")
 public class ClienteController {
@@ -87,6 +89,25 @@ public class ClienteController {
             .build(), HttpStatus.NOT_FOUND);
         }
     }
+
+    @GetMapping("clientes")
+    public ResponseEntity<?> showAll (){
+        List<Cliente> getList = iClienteService.listAll();
+
+        if(getList != null){
+            
+            return new ResponseEntity<>(MensajeResponse.builder()
+            .mensaje("")
+            .object(getList)
+            .build(), HttpStatus.OK);
+        }
+
+        return new ResponseEntity<>(MensajeResponse.builder()
+            .mensaje("No existen registros!!!")
+            .object(null)
+            .build(), HttpStatus.OK);
+    }
+
 
     @GetMapping("cliente/{id}")
     public ResponseEntity<?> showById (@PathVariable Integer id){
