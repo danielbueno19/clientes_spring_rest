@@ -19,5 +19,5 @@ INSERT INTO clientes (nombre, apellido, correo, fecha_registro) VALUES('Ben', 'T
 
 El proyecto permite el registro de clientes a una db mysql usando el framework springboot
 la finaliada del proyecto esta en aplicar buenas practicas sobre el framework
-inclye ducmentacion mediante swagger ya que se uso java 11, sin embargo se puede modificar para documentarla con: springdoc, si se usa java 17 o superior
+inclye ducmentacion mediante swagger ya que se uso java 11, sin embargo se puede modificar para documentarla con: springdoc, si se usa java 17 o superior.
 
