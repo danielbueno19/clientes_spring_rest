@@ -12,7 +12,7 @@ CREATE TABLE `db_clientes_springboot`.`clientes` (
    `apellido` VARCHAR(45) NOT NULL,  
    `correo` VARCHAR(45) NOT NULL,  
    `fecha_registro` date  NOT NULL,  
-  PRIMARY KEY (`id_cliente`));
+   PRIMARY KEY (`id_cliente`));
   
 INSERT INTO clientes (nombre, apellido, correo, fecha_registro) VALUES('Joel', 'Jurado', 'juradoec@yahoo.com', '2023-08-01');
 INSERT INTO clientes (nombre, apellido, correo, fecha_registro) VALUES('Carlos', 'Miranda', 'mirandaTr98@gmail.com', '2023-08-02');
