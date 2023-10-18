@@ -1,6 +1,6 @@
 # clientes_spring_rest
+La construcción de proyecto está basado en la arquitectura N-Capas 
 
-El proyecto permite el registro de clientes a una db mysql usando el framework springboot
 
 ## Script de la ddbb
 
@@ -17,7 +17,7 @@ INSERT INTO clientes (nombre, apellido, correo, fecha_registro) VALUES('Carlos',
 INSERT INTO clientes (nombre, apellido, correo, fecha_registro) VALUES('Marcela', 'Sanchez', 'schMarce@itb.com', '2023-08-03');
 INSERT INTO clientes (nombre, apellido, correo, fecha_registro) VALUES('Ben', 'Tennyson', 'ben10@cn.com', '2023-08-04');
 
-La construcción de proyecto está basado en la arquitectura N-Capas 
+El proyecto permite el registro de clientes a una db mysql usando el framework springboot
 la finaliada del proyecto esta en aplicar buenas practicas sobre el framework
-inclye ducmentacion mediante swagger ya que se uso java 11, sin embargo se puede modificar para springdoc si se usa con java 17 o superior
+inclye ducmentacion mediante swagger ya que se uso java 11, sin embargo se puede modificar para documentarla con: springdoc, si se usa java 17 o superior
 
