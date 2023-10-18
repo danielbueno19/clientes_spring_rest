@@ -8,4 +8,5 @@ public interface IClienteService {
     Cliente save (ClienteDTO clienteDto);
     Cliente findById (Integer id);
     void dalete (Cliente cliente);
+    boolean existById(Integer id);
 }
