@@ -7,6 +7,7 @@ La construcción de proyecto está basado en la arquitectura N-Capas
 create database db_clientes_springboot;
 
 CREATE TABLE `db_clientes_springboot`.`clientes` (
+
    `id_cliente` INT ZEROFILL NOT NULL AUTO_INCREMENT,  
    `nombre` VARCHAR(45) NOT NULL,  
    `apellido` VARCHAR(45) NOT NULL,  
